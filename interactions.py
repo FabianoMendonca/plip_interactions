@@ -165,17 +165,17 @@ def process_plip_file(filename):
                         results[current_section].append(interaction)
     return structure, results
 
-def print_results(structure, results):
-    if structure:
-        print(f"{structure}\n")
-    for sec, (title, _) in section_parsers.items():
-        if sec in results and results[sec]:
-            print(title)
-            for row in results[sec]:
-                print(row)
-            print()
+# def print_results(structure, results):
+#     if structure:
+#         print(f"{structure}\n")
+#     for sec, (title, _) in section_parsers.items():
+#         if sec in results and results[sec]:
+#             print(title)
+#             for row in results[sec]:
+#                 print(row)
+#             print()
 
-if __name__ == '__main__':
-    filename = "report.txt"
-    structure, results = process_plip_file(filename)
-    print_results(structure, results)
+# if __name__ == '__main__':
+#     filename = "report.txt"
+#     structure, results = process_plip_file(filename)
+#     print_results(structure, results)
